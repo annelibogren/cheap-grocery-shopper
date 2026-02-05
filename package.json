@@ -1,0 +1,25 @@
+{
+  "name": "cheap-grocery-shopper",
+  "version": "1.0.0",
+  "description": "Hobby project, find the store with the cheapest groceries for a given recipe",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=backend && npm install --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build": "npm run build:backend && npm run build:frontend"
+  },
+  "keywords": [
+    "grocery",
+    "price-comparison",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT"
+}
