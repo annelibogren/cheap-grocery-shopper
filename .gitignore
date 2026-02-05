@@ -29,6 +29,8 @@ Thumbs.db
 
 # Prisma
 backend/prisma/migrations/
+backend/prisma/*.db
+backend/prisma/*.db-journal
 
 # Testing
 coverage/
